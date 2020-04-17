@@ -1,6 +1,6 @@
 {#
 /**
- * Array 5 point choice
+ * Array 10 point choice
  * @var $i
  * @var $myfname
  * @var $CHECKED
@@ -18,8 +18,8 @@
         value="{{ value }}"
         {{ CHECKED }}
      />
-    <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
-        {{ processString(labelText) }}
+    <label for="answer{{ myfname }}-{{ i }}" class="ls-label-xs-visibility">
+        {{ i=="" ? processString(labelText) : i }}
     </label>
 </td>
 <!-- end of answer_td_input -->
